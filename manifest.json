@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "FF Start",
+  "version": "0.1",
+
+  "description": "Serene start page to remind you to use your time well",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.tranzform.ca/*"],
+      "js": ["ff-start.js"]
+    }
+  ]
+}
