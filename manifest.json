@@ -4,15 +4,25 @@
   "version": "0.1",
 
   "description": "Serene start page to remind you to use your time well",
+  "homepage_url": "https://github.com/1DaWS/FF-Start",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/beasts-48.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.tranzform.ca/*"],
-      "js": ["ff-start.js"]
-    }
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Beastify",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
   ]
 }
