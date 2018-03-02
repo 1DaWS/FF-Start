@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "Project 8",
+  "version": "0.1",
+
+  "description": "A framework for building Firefox start page extensions.",
+  "homepage_url": "https://github.com/1DaWS/Project-8",
+  "icons": {
+    "48": "icons/"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/",
+    "default_title": "",
+    "default_popup": ""
+  },
+
+  "web_accessible_resources": [
+    ""
+  ]
+
+}
+
+
+
